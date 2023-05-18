@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/article_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/article_header"
+            android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+            />
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/article_description"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="@string/lorem_ipsum"
+            android:ellipsize="end"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_marginBottom="5dp"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/article_creation_date"
+            android:layout_gravity="end"
+            android:textStyle="italic"
+            android:text="12/20/30 13:15"
+            android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+            />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
